@@ -1,0 +1,13 @@
+<h1>Show Users</h1>
+
+<p>
+	<%= @sport.sport_name %><br>
+	<%= @sport.sport_type %><br>
+	<%= @sport.no_of_players %><br>
+	<%= @sport.date %>
+</p><br>
+
+
+<%= link_to "Edit", edit_sport_path(@sport) %>
+<%= link_to "Back", root_path(@sport) %>
+	

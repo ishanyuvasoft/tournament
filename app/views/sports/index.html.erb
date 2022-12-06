@@ -1,0 +1,16 @@
+<h1>Sports index</h1>
+
+<%= link_to "New Sport", new_sport_path %>
+
+<ul>
+	<% @sports.each do |sport| %>
+	<li>
+		<%= sport.sport_name %>
+	</li>
+
+	<%= link_to "Show", sport_path(id: sport.id) %>
+	<%= button_to "Destroy", sport_path(id: sport.id), method: :delete %>
+
+	<% end %>
+</ul>
+

@@ -1,0 +1,29 @@
+<h1>Edit Users Deatils</h1>
+
+<%= form_with model: @sport , url: sport_path, method: :patch do |u| %>
+
+<div>
+	<%= u.label :sport_name %><br>
+	<%= u.text_field :sport_name %>
+</div>
+
+<div>
+	<%= u.label :sport_type %><br>
+	<%= u.text_field :sport_type %>
+</div>
+
+<div>
+	<%= u.label :no_of_players %><br>
+	<%= u.text_field :no_of_players %>
+</div>
+
+<div>
+    <%= u.label :date %><br>
+    <%= u.text_field :date %>
+ </div>
+
+<div>
+	<%= u.submit %>
+</div>
+
+<% end %>
